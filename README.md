@@ -32,7 +32,7 @@ connect to http://becode.test/wp-admin
 
 Activate all plugins **WP Migrate DB Pro**. 
 
-NB : You may need the licence for activated. Check on 1Password, to copy/paste it. 
+*NB : You may need the licence for activated. Check on 1Password, to copy/paste it.*
 
 Go to `Tools > Migrate DB Pro > Migrate`
 
