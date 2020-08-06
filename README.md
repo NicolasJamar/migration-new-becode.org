@@ -32,13 +32,13 @@ connect to http://becode.test/wp-admin
 
 Activate all plugins **WP Migrate DB Pro**. 
 
-*NB : You may need the licence for activated. Check on 1Password, to copy/paste it.*
+*NB : You may need the licence to activate. Check on 1Password, to copy/paste it.*
 
 Go to `Tools > Migrate DB Pro > Migrate`
 
 Select `Pull`. You'll need to link with the connection info of the DB online.
 
-So, connect to http://becode.org/wp-admin and go to `Tools > Migrate DB Pro > Settings` and copy the connection info.
+Then, connect to http://becode.org/wp-admin and go to `Tools > Migrate DB Pro > Settings` and copy the connection info.
 
 Go back to http://becode.test/wp-admin `Tools > Migrate DB Pro > Migrate` and paste the connection info of the DB in the Pull field. 
 
