@@ -69,11 +69,19 @@ It should be like that :
 
 ![migrating not import plugin settings](migratedb3.png)
 
-Don't select `Media files` options the first time. 
+> Don't select `Media files` options the first time. 
 
 Save your migration profile. 
 
 Click on the button `Pull & Save`. It will take few minutes and it will done. 
+
+#### Connect to staging
+
+Go to the trellis folder and run : 
+
+```
+./bin/deploy.sh staging becode.org
+```
 
 #### Possible problem 
 
