@@ -30,7 +30,7 @@ Restart nginx :
 service nginx restart
 ```
 
-#### 2. Install wordpress
+#### 2. becode.test
 
 Go to `http://becode.test` on your web browser. 
 
@@ -39,13 +39,11 @@ If it's the first you connect to becode.test, you must install wordpress. Fill i
 
 #### 3. Retrieve the DB online on your local PC
 
-connect to http://becode.test/wp-admin
-
-*Check on 1Password for login and password* 
+connect to http://becode.test/wp-admin > *Check on 1Password for login and password* 
 
 Activate all plugins **WP Migrate DB Pro**. 
 
-*NB : You may need the licence to activate. Check on 1Password, to copy/paste it.*
+> :point_right: *NB : You may need the licence to activate. Check on 1Password, to copy/paste it.*
 
 
 Go to `Tools > Migrate DB Pro > Migrate`
@@ -53,7 +51,6 @@ Go to `Tools > Migrate DB Pro > Migrate`
 Select `Pull`. You'll need to link with the connection info of the DB online.
 
 > Before to go further, you must desactivate the migration of the plugins
-
 
 Then, connect to http://becode.org/wp-admin and go to `Tools > Migrate DB Pro > Settings` and copy the connection info.
 
@@ -69,7 +66,7 @@ It should be like that :
 
 ![migrating not import plugin settings](migratedb3.png)
 
-> Don't select `Media files` options the first time. 
+> :point_right: Don't select `Media files` options the first time. 
 
 Save your migration profile. 
 
