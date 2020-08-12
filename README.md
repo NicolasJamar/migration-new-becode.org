@@ -63,7 +63,7 @@ In the options `Find` should look like that :
 
 ![migrating DB 1](migratedb1.png)
 
-Check the **Advanced options**. You mustn't import the plugins settings, so check the box `fff`
+Check the **Advanced options**. You mustn't import the plugins settings, so check the box `Do not migrate the active plugins settings`
 
 It should be like that :
 
