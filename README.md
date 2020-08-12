@@ -100,3 +100,12 @@ Go to `./site` and open `composer.json`.
 Check for the line `"deliciousbrains-plugin/wp-migrate-db-pro": ...` and change with the correct version. 
 
 After, in your terminal run `composer update`
+
+## Pour bosser
+
+1. aller sur la branche staging
+2. travaillez en local sur becode.test
+3. commit et push
+4. déployer en staging
+
+Pour revenir en arrière faire un rollback. 
