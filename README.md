@@ -103,6 +103,8 @@ After, in your terminal run `composer update`
 
 ## Pour bosser
 
+Pour lancer le staging la première fois `ssh -i staging-becode-website.pub web@staging.becode.org`
+
 1. aller sur la branche staging
 2. travaillez en local sur becode.test
 3. commit et push
