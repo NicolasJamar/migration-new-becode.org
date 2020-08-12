@@ -83,6 +83,10 @@ Go to the trellis folder and run :
 ./bin/deploy.sh staging becode.org
 ```
 
+If problem, check the file `trellis/groups_vars/staging/users.yml`. It should look like that : 
+
+![configure groups vars for staging](migratedb4.png)
+
 #### Possible problem 
 
 If you have this message :
