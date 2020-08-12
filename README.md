@@ -63,7 +63,13 @@ In the options `Find` should look like that :
 
 ![migrating DB 1](migratedb1.png)
 
-Select also `Media files` options. 
+Check the **Advanced options**. You mustn't import the plugins settings, so check the box `fff`
+
+It should be like that :
+
+![migrating not import plugin settings](migratedb3.png)
+
+Don't select `Media files` options the first time. 
 
 Save your migration profile. 
 
