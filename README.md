@@ -2,7 +2,13 @@
 
 
 #### 1. Remove redirects.conf
-After lauching vagrant, connect with sudo : 
+After lauching vagrant, to the server 
+
+```
+vagrant ssh
+```
+
+then, connect with sudo : 
 
 ```
 sudo -i
