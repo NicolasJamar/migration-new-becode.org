@@ -98,9 +98,9 @@ Go to the trellis folder and run :
 ./bin/deploy.sh staging becode.org
 ```
 
-If there is a problem, check the file `trellis/groups_vars/staging/users.yml`. It should look like that : 
+If there is a problem, check the file `trellis/groups_vars/staging/users.yml`. It should look like that :
 
-![configure groups vars for staging](migratedb4.png)
+You have to change the keys with `.pem` file : `"{{ lookup('file', './ssh_keys/staging-becode-website.pem') }}"`
 
 ## Pour bosser
 
