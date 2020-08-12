@@ -50,39 +50,29 @@ Then, go to `Tools > Migrate DB Pro > Migrate`
 
 Select `Pull`. You'll need to link with the connexion info of the DB online.
 
-So, connect to http://becode.org/wp-admin and go to `Tools > Migrate DB Pro > Settings` and copy the **connection info**.
+So, connect to http://becode.org/wp-admin and go to `Tools > Migrate DB Pro > Settings` and copy the **Connection info**.
 
-Go back to http://becode.test/wp-admin `Tools > Migrate DB Pro > Migrate` and paste the connection info of the DB in the **Pull** field. 
+Go back to http://becode.test/wp-admin `Tools > Migrate DB Pro > Migrate` and paste the connection info of the DB in the `Pull` field. 
 
-In the options `Find` should look like that :
-
-![migrating DB 1](migratedb1.png)
-
-Check the **Advanced options**. You mustn't import the plugins settings, so check the box `Do not migrate the active plugins settings`
+:warning: Check the **Advanced options**. You mustn't import the plugins settings, so check the box `Do not migrate the active plugins settings`
 
 It should be like that :
 
 ![migrating not import plugin settings](migratedb3.png)
 
-> :point_right: Don't select `Media files` options the first time. 
+The options `Find Replace` should look like that :
+
+![migrating DB 1](migratedb1.png)
+
+
+> :point_right: Don't select `Media files` option the first time you want to migrate the DB. 
 
 Save your migration profile. 
 
 Click on the button `Pull & Save`. It will take few minutes and it will done. 
 
-#### Connect to staging
 
-Go to the trellis folder and run : 
-
-```
-./bin/deploy.sh staging becode.org
-```
-
-If problem, check the file `trellis/groups_vars/staging/users.yml`. It should look like that : 
-
-![configure groups vars for staging](migratedb4.png)
-
-#### Possible problem 
+#### Possible issue 
 
 If you have this message :
 
@@ -95,6 +85,22 @@ Go to `./site` and open `composer.json`.
 Check for the line `"deliciousbrains-plugin/wp-migrate-db-pro": ...` and change with the correct version. 
 
 After, in your terminal run `composer update`
+
+### Work with staging
+
+Go to the staging branch. 
+
+```git checkout staging```
+
+Go to the trellis folder and run : 
+
+```
+./bin/deploy.sh staging becode.org
+```
+
+If there is a problem, check the file `trellis/groups_vars/staging/users.yml`. It should look like that : 
+
+![configure groups vars for staging](migratedb4.png)
 
 ## Pour bosser
 
