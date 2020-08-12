@@ -63,17 +63,29 @@ In the options `Find` should look like that :
 
 ![migrating DB 1](migratedb1.png)
 
-Check the **Advanced options**. You mustn't import the plugins settings, so check the box `fff`
+Check the **Advanced options**. You mustn't import the plugins settings, so check the box `Do not migrate the active plugins settings`
 
 It should be like that :
 
 ![migrating not import plugin settings](migratedb3.png)
 
-Don't select `Media files` options the first time. 
+> Don't select `Media files` options the first time. 
 
 Save your migration profile. 
 
 Click on the button `Pull & Save`. It will take few minutes and it will done. 
+
+#### Connect to staging
+
+Go to the trellis folder and run : 
+
+```
+./bin/deploy.sh staging becode.org
+```
+
+If problem, check the file `trellis/groups_vars/staging/users.yml`. It should look like that : 
+
+![configure groups vars for staging](migratedb4.png)
 
 #### Possible problem 
 
