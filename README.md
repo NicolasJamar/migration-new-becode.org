@@ -1,4 +1,4 @@
-### For migrating the DB on your local PC
+## For migrating the DB on your local PC
 
 
 #### 1. Remove redirects.conf
@@ -111,4 +111,4 @@ To launch the staging the first time `ssh -i staging-becode-website.pub web@stag
 3. commit & push
 4. Deploy on staging
 
-To comeback on your work use a [rollback](https://roots.io/docs/trellis/master/deployments/#rollbacks). 
+To comeback to a previous version use a [rollback](https://roots.io/docs/trellis/master/deployments/#rollbacks). 
