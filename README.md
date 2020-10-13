@@ -88,13 +88,17 @@ Check for the line `"deliciousbrains-plugin/wp-migrate-db-pro": ...` and change 
 
 After, in your terminal run `composer update`
 
-### Launch the staging the first time
+## Deploy on the staging
 
-To launch the staging the first time `ssh -i staging-becode-website.pub web@staging.becode.org`
+> To launch the staging the first time `ssh -i staging-becode-website.pub web@staging.becode.org`
 
-Go to the staging branch. 
+Go to the staging branch and run : 
 
-```git checkout staging```
+```
+git checkout staging
+git pull
+composer update
+```
 
 Go to the trellis folder and run : 
 
@@ -109,6 +113,7 @@ You have to change the keys with `.pem` file : `"{{ lookup('file', './ssh_keys/s
 ## For working with staging
 
 1. Go on the 'staging' branch
+1. `git pull`
 1. Got to trellis folder : `cd trellis`
 1. `vagrant up`
 1. View changes on local with becode.test
@@ -116,3 +121,13 @@ You have to change the keys with `.pem` file : `"{{ lookup('file', './ssh_keys/s
 1. Deploy on staging
 
 To comeback to a previous version use a [rollback](https://roots.io/docs/trellis/master/deployments/#rollbacks). 
+
+### Possible issue after pulling the stage
+
+In order to work on local with the staging, check the dev env configuration. 
+A pull or a merge can change this file. 
+Go to : `site > config > environments > development.php`
+
+This file have to be configured like that :
+
+![development file env](config_env_newb.png)
