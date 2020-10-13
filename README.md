@@ -2,7 +2,9 @@
 
 
 #### 1. Remove redirects.conf
-After lauching vagrant, to the server 
+To prevent some issue, you have to remove the file `redirects.conf`.
+
+After lauching vagrant, go to the server : 
 
 ```
 vagrant ssh
