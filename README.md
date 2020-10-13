@@ -102,13 +102,13 @@ If there is a problem, check the file `trellis/groups_vars/staging/users.yml`. I
 
 You have to change the keys with `.pem` file : `"{{ lookup('file', './ssh_keys/staging-becode-website.pem') }}"`
 
-## Pour bosser
+## For working
 
-Pour lancer le staging la première fois `ssh -i staging-becode-website.pub web@staging.becode.org`
+To launch the staging the first time `ssh -i staging-becode-website.pub web@staging.becode.org`
 
-1. aller sur la branche staging
-2. travaillez en local sur becode.test
-3. commit et push
-4. déployer en staging
+1. Go on the branch 'staging'
+2. Work on local on becode.test
+3. commit & push
+4. Deploy on staging
 
-Pour revenir en arrière faire un rollback. 
+To comeback on your work use a [rollback](https://roots.io/docs/trellis/master/deployments/#rollbacks). 
