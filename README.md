@@ -34,7 +34,7 @@ service nginx restart
 
 Go to `http://becode.test` on your web browser. 
 
-If it's the first you connect to becode.test, you must install wordpress. Fill in the form with fakes informations. 
+If it's the first time you connect to becode.test, you must install WordPress. Fill in the form with fakes informations. 
 
 
 #### 3. Retrieve the DB online on your local PC
